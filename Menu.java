@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class Menu {
     private int num; 
     private double burger = 25.00; 
@@ -15,6 +17,9 @@ public class Menu {
         return num; 
     }
 
+    public void displaymenu(){
+        JOptionPane.showMessageDialog(null,"JUAN FOOD STORE\n*********************\n(1) Burger  Php 25.00\n(2) Coke    Php 25.00\n(3) Fries   Php 50.00\n *********************\n"); 
+    }
     public void displayinput(){
         if(getNum()==1){
        total +=burger;               
@@ -29,7 +34,7 @@ public class Menu {
             total +=fries; 
         }
         else if(getNum()==0){
-            System.out.printf("Total cost: %.2f", total); 
+            JOptionPane.showMessageDialog(null, "Total cost: "+ total); 
             System.exit(0);
         }
         

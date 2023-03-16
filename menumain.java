@@ -1,24 +1,20 @@
-import java.util.Scanner; 
+import javax.swing.*;
 public class menumain {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in); 
+     
 
         int num; 
       
-        System.out.print("JUAN FOOD STORE\n"); 
-        System.out.print("*********************\n"); 
-        System.out.print("(1) Burger  Php 25.00\n");
-        System.out.print("(2) Coke    Php 25.00\n");
-        System.out.print("(3) Fries   Php 50.00\n");
-        System.out.print("*********************\n"); 
+        JOptionPane.showMessageDialog(null,"JUAN FOOD STORE\n*********************\n(1) Burger  Php 25.00\n(2) Coke    Php 25.00\n(3) Fries   Php 50.00\n *********************\n"); 
+        
 
         for(int i = 1; i <=10; i++){
         
-        System.out.print("Enter your choice: "); 
-        num = input.nextInt(); 
+        num = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter your choice: "));  
         Menu j1 = new Menu(num);
-        System.out.print("Display the menu\n"); 
+        JOptionPane.showMessageDialog(null, "Display the menu\n"); 
         j1.displayinput();
+        j1.displaymenu();
      
                       
      }
