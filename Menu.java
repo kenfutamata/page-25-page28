@@ -30,9 +30,6 @@ public class Menu {
         else if(getNum()==3){
             total +=fries;
         }
-        else if(getNum()==3){
-            total +=fries; 
-        }
         else if(getNum()==0){
             JOptionPane.showMessageDialog(null, "Total cost: "+ total); 
             System.exit(0);
